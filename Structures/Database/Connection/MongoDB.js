@@ -1,5 +1,5 @@
 const { mongoose } = require("mongoose");
-const DATABASE = "mongodb+srv://pilahito:uHxnRgzXGr8m1J2v@cluster0.m3dz2r8.mongodb.net/?retryWrites=true&w=majority";
+const DATABASE = process.env.Database;
 
 function Connect() {
     if (!DATABASE) {
